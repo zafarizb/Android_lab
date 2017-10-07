@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        style="@style/AppTheme"
+        android:id="@+id/title"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="@dimen/title_text"
+        android:text="@string/title" />
+
+    <ImageView
+        style="@style/AppTheme"
+        android:id="@+id/sysu"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/sysu"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:stretchColumns="1">
+        <TableRow
+            style="@style/AppTheme">
+            <TextView
+                android:gravity="right"
+                android:text="@string/a"/>
+            <EditText
+                android:inputType="text"
+                android:hint="@string/b"/>
+        </TableRow>
+        <TableRow
+            style="@style/AppTheme"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:gravity="right"
+                android:text="@string/c"/>
+            <EditText
+                android:inputType="textPassword"
+                android:hint="@string/d"/>
+        </TableRow>
+    </TableLayout>
+
+    <RadioGroup
+        style="@style/AppTheme"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+        <RadioButton
+            style="@style/AppTheme"
+            android:id="@+id/id1"
+            android:checked="true"
+            android:text="@string/e"/>
+        <RadioButton
+            style="@style/AppTheme"
+            android:id="@+id/id2"
+            android:layout_marginLeft="10dp"
+            android:text="@string/f"/>
+
+    </RadioGroup>
+    <TableLayout
+        style="@style/AppTheme"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+        <TableRow>
+            <Button
+                android:background="@drawable/buttontype"
+                android:text="@string/i"
+                android:textColor="@color/Primary_white" />
+
+            <Button
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/buttontype"
+                android:text="@string/j"
+                android:textColor="@color/Primary_white"  />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
